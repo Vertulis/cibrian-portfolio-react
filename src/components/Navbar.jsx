@@ -1,13 +1,15 @@
 import { NavLink } from 'react-router-dom';
+import styles from '../modules/Navbar.module.css';
 
 function Navbar() {
   return (
-    <nav className="nav-container">
-      <ul>
-        <li>
+    <nav className={styles.navContainer}>
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            className={({ isActive }) => `${isActive ? styles.active : ''} ${styles.link}`}
+
           >
             Home
           </NavLink>
@@ -15,7 +17,8 @@ function Navbar() {
         <li>
           <NavLink
             to="/about"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            className={({ isActive }) => `${isActive ? styles.active : ''} ${styles.link}`}
+
           >
             About Me
           </NavLink>
@@ -23,15 +26,17 @@ function Navbar() {
         <li>
           <NavLink
             to="/projects"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            className={({ isActive }) => `${isActive ? styles.active : ''} ${styles.link}`}
+
           >
-            My Projects
+            Projects
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/contact"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            className={({ isActive }) => `${isActive ? styles.active : ''} ${styles.link}`}
+
           >
             Contact
           </NavLink>
