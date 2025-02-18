@@ -1,10 +1,63 @@
 .homeContainer {
+    padding: 50px;
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pexels-adrien-olichon-1257089-2931246.jpg') no-repeat center center;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 .title{
-    font-size: 5.5em;
+    font-size: 5rem;
+    font-weight: 900;
+    color: hsl(192, 100%, 50%);
+}
+.text{
+    font-size: 0.9em;
+    width: 60%;
     color: white;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: fit-content;
+}
+.contactIcons{
+    color: hsl(192, 100%, 50%);
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactIcons:hover{
+    color: hsl(0, 0%, 100%);
+    transform: scale(1.02);
+}
+.downloadCVLink{
+    text-decoration: none;
+    padding: none;
+    margin: none;
+}
+.downloadCVBtn{
+    border: none;
+    background-color: hsl(192, 100%, 50%);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    transition: background-color 0.3s;
+}
+
+.downloadCVBtn:hover{
+    background-color: hsl(0, 0%, 100%);
+    transform: scale(1.02);
+}
+.profileImg{
+    float: right;
 }

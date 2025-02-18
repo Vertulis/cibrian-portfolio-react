@@ -4,13 +4,31 @@ function Home(){
     return(
         <div className={styles.homeContainer}>
             <div className="container">
-                <h1 className={styles.title}>Cibrian <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hofsta</h1>
-                <img src={cibrian} alt="Cibrian profile image" width={300}/>
+                <div>
+                    <h1 className={styles.title}>Cibrian Hofsta</h1>
+                    <p className={styles.text}>
+                        Hi, I'm Cibrian Hofsta, a developer passionate about building robust, 
+                        feature-rich applications. I specialize in Java, C#, Kotlin, SQL, HTML & CSS, 
+                        and React. 
+                        <br />
+                        <br />
+                        I thrive on creating unique and innovative features that bring real value to users, 
+                        always aiming to build scalable, maintainable, and seamless applications.
+                        <br />
+                        <br />
+                        When I’m not coding, you can find me gaming, watching movies and series, 
+                        enjoying music, or diving into my passion for cars.
+                        </p>
+                    <div className={styles.linksContainer}>
+                        <i className={`${"fa-brands fa-linkedin"} ${styles.contactIcons}`} onClick={() => window.location.href = "https://www.linkedin.com/in/cibrian-hofsta-b95508279"}></i>
+                        <i className={`${"fa-brands fa-github"} ${styles.contactIcons}`} onClick={() => window.location.href = "https://github.com/Vertulis"}></i>
+                        <a className={styles.downloadCVLink} href="../images/CibrianCV.pdf" download>
+                            <button className={styles.downloadCVBtn}>Download CV</button>
+                        </a>
+                    </div>
+                </div>
+                {/* <img className={styles.profileImg} src={cibrian} alt="Cibrian profile image" width={300}/> */}
             </div>
-            <div>
-                <p className={styles.text}>This is a simple portfolio website built with React. Feel free to explore the website and learn more about me and my projects.</p>
-            </div>
-
         </div>
     )
 }
