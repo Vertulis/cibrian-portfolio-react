@@ -61,3 +61,23 @@
 .profileImg{
     float: right;
 }
+
+@media screen and (max-width: 520px) {
+    .homeContainer {
+        padding: 20px;
+        
+        display: flex;
+        align-items: start;
+    }
+    .title{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .text{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .linksContainer{
+        margin-left: 0px;
+    }
+  }
