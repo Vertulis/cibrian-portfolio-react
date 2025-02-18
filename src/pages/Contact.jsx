@@ -5,6 +5,29 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        toast("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "31fb1929-9a77-4927-a5d2-d55230cab699");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+        toast("Form Submitted Successfully");
+        event.target.reset();
+        } else {
+        console.log("Error", data);
+        toast(data.message);
+        }
+    };
     function copyPhoneNumber() {
         navigator.clipboard.writeText('067 231 5621');
         toast("Copied Phone Number");
@@ -16,9 +39,9 @@ function Contact() {
     }
 
     return(
-        <>
+        <div className={styles.contactContainer}>
             <h1>Contact</h1>
-            <form className={styles.contactForm} action="mailto:hofstacibrian@gmail.com" method="GET">
+            <form className={styles.contactForm} onSubmit={onSubmit}>
                 <p className={styles.text}>This form will pre-populate your existing email application with the fields below:</p>
                 <input className={styles.subjectInput} name="subject" type="text" placeholder="Subject..." />
                 <textarea className={styles.bodyInput} name="body" placeholder="Message..."></textarea>
@@ -34,7 +57,7 @@ function Contact() {
                 <i className={`${"fa-solid fa-phone"} ${styles.contactIcons}`} onClick={copyPhoneNumber} ></i>
                 <i className={`${"fa-solid fa-envelope"} ${styles.contactIcons}`} onClick={copyEmail}></i>
             </div>
-        </>
+        </div>
         
     )
 }

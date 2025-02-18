@@ -1,49 +1,57 @@
 .navContainer{
     height: 100vh;
-    width: 20%;
+    width: 180px;
+    display: flex;
+    align-items: center;
     position: fixed;
+    padding: 10px;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: hsl(0, 0%, 7%);
     overflow-x: hidden;
+    
 }
 .list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    border: none;
 }
 .listItem{
     text-decoration: none;
+    border: none;
 }
 
 .link{
-    padding: 6px 6px 6px 32px;
     text-decoration: none;
     font-size: 25px;
     color: hsl(0, 0%, 80%) ;
     display: block;
+    border: none;
 }
 
 .active{
-    background-color: hsl(192, 100%, 50%) ;
-    color: black;
+    color: hsl(192, 100%, 50%);
 }
+
 .link:hover{
     color: hsl(0, 0%, 100%);
-    background-color: hsl(192, 100%, 40%);
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
     .navContainer {
-      width: 100%;
-      height: auto;
-      position: relative;
+        width: 100%;
+        height: auto;
+        padding: 4px;
+        position: relative;
     }
     .link {
         text-align: center;
-        float: left;
     }
   }
   
