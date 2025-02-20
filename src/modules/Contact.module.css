@@ -1,7 +1,9 @@
 .contactContainer{
     padding: 10px;
 }
-
+hr{
+    color: hsl(192, 100%, 50%);
+}
 .contactForm{
     padding: 10px;
     margin-top: 20px;
@@ -9,12 +11,6 @@
     flex-direction: column;
     gap: 10px;
     border-radius: 10px;
-}
-
-.text{
-    font-size: 10pt;
-    color: hsl(0, 0%, 80%);
-    font-weight: 500;
 }
 
 .subjectInput{

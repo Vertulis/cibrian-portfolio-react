@@ -41,8 +41,8 @@ function Contact() {
     return(
         <div className={styles.contactContainer}>
             <h1>Contact</h1>
+            <hr />
             <form className={styles.contactForm} onSubmit={onSubmit}>
-                <p className={styles.text}>This form will pre-populate your existing email application with the fields below:</p>
                 <input className={styles.subjectInput} name="subject" type="text" placeholder="Subject..." />
                 <textarea className={styles.bodyInput} name="body" placeholder="Message..."></textarea>
                 <input className={styles.sendBtn} type="submit" value="Send Email" />
