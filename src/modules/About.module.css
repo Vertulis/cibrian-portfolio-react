@@ -15,21 +15,51 @@ hr{
     color: hsl(0, 0%, 90%);
 }
 .languageImagesContainer{
-    padding: 10px;
-    margin-top: 10px;
     display: flex;
-    column-gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 20px 20px;
+    flex-wrap: wrap;
 }
 .languageImage{
     width: 50px;
 }
 .credleyBadgesContainer {
     display: flex;
+    padding: 10px;
     gap: 20px;
-    padding: 15px;
     border-radius: 10px;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+}
+.credleyBadgesContainer a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 10%)
+}
+.credleyBadge{
+    width: 400px;
+    height: 130px;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 90%);
+    border: 1px solid hsl(0, 0%, 90%);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.1s ;
+}
+.credleyBadge:hover{
+    transform: scale(1.01);
+}
+.credleyBadge h3{
+    padding: 2px;
+    margin: 0;
+    font-weight: 500;
+}
+.credleyBadge h3{
+    padding: 2px;
+    margin: 0;
+    font-weight: 500;
 }
 
 

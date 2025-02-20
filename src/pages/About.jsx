@@ -54,51 +54,98 @@ function About(){
                     <img className={styles.languageImage} src={csharp} alt='C-Sharp logo'/>
                 </div>
                 <br />
-                I'm always eager to learn and expand my skills, with a keen interest in backend 
+                I'm always motivated to learn and expand my skills, with a keen interest in backend 
                 development and cloud computing. 
                 <br />
-                My certifications, including the AWS CL02, reflect my commitment to continuous
+                <br />
+                Below are some of my certifications that reflect my commitment to continuous
                 growth in the field.
                 <div className={styles.credleyBadgesContainer}>
-                    <div 
-                        className={styles.credleyBadge}
-                        data-iframe-width="150" 
-                        data-iframe-height="270" 
-                        data-share-badge-id="14cba0a3-f17f-4bf6-b712-7b40791915e6" 
-                        data-share-badge-host="https://www.credly.com">
-                    </div>
-                    <div 
-                        className={styles.credleyBadge}
-                        data-iframe-width="350px" 
-                        data-iframe-height="270"
-                        data-share-badge-id="12a93632-415a-49a5-8360-a07797af2890" 
-                        data-share-badge-host="https://www.credly.com">
-                    </div>     
+                    <a href='https://www.credly.com/badges/184e66fb-0353-4e87-bae4-2fc4a4616e48/public_url'>
+                        <div className={styles.credleyBadge}>
+                            <h3>Relational Databases (RDBMS) Essentials</h3>
+                            <hr />
+                            <p>Issued: 07 January 2025</p>
+                            <p>Issued by: Coursera</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.credly.com/badges/b58ace09-a52f-4a9f-9d66-9073290fffd7/public_url">
+                        <div className={styles.credleyBadge}>
+                            <h3>Artificial Intelligence Essentials V2</h3>
+                            <hr />
+                            <p>Issued: 23 January 2025</p>
+                            <p>Issued by: Coursera</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.credly.com/badges/261ad4a0-423b-4e35-ad36-94a7d92ff057/public_url">
+                        <div className={styles.credleyBadge}>
+                            <h3>Generative AI Essentials</h3>
+                            <hr />
+                            <p>Issued: 27 January 2025</p>
+                            <p>Issued by: Coursera</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.credly.com/badges/14cba0a3-f17f-4bf6-b712-7b40791915e6/public_url">
+                        <div className={styles.credleyBadge}>
+                            <h3>Artificial Intelligence</h3>
+                            <hr />
+                            <p>Issued: 19 February 2025</p>
+                            <p>Issued by: Coursera</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.credly.com/badges/8917b58f-2557-40f7-8031-60913082f21e/public_url">
+                        <div className={styles.credleyBadge}>
+                            <h3>Generative AI: Prompt Engineering</h3>
+                            <hr />
+                            <p>Issued: 20 February 2025</p>
+                            <p>Issued by: Coursera</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.credly.com/badges/12a93632-415a-49a5-8360-a07797af2890/public_url">
+                        <div className={styles.credleyBadge}>
+                            <h3>Relational Databases (RDBMS) Essentials</h3>
+                            <hr />
+                            <p>Issued: 27 November 2024 - 27 November 2027</p>
+                            <p>Issued by: AWS</p>
+                        </div>
+                    </a>
+                    
                 </div>
                 <br />
                 <br />
-                Beyond my technical knowledge, my professional experiences
-                as a Lecturer Assistant, Examination Assistant, and 
-                First-Line User Assistance Technician have equipped me with 
-                problem-solving, communication, and analytical skills. 
+                Beyond my technical knowledge, I have work experiences
+                as a:
+                <ul>
+                    <li>Lecturer Assistant</li>
+                    <li>Examination Assistant</li>
+                    <li>and First-Line User Assistance Technician</li>
+                </ul>
+                and these roles have equipped me with problem-solving, communication, and analytical skills. 
+                <br /><br />
+                Currently, I am refining my skills through UVU Capaciti,
+                where I am gaining deeper insights into the world of software development.
                 <br />
-                Currently, I am refining my expertise through UVU Capaciti,
-                where I am gaining deeper insights into the industry.
-                <br />
-                <br />
-                I'm eager to transition into a full-time software development 
-                role where I can contribute, grow, and innovate. 
+                I'm eager to work my way into a full-time software development 
+                role where I can contribute, learn, and innovate. 
                 <br />
                 <br />
                 Feel free to&nbsp; 
                 <NavLink to="/projects" className={({ isActive }) => `${isActive ? styles.active : ''} ${styles.link}`}> 
-                explore my projects 
+                check out my projects 
                 </NavLink> and&nbsp;
                 <NavLink to="/contact" className={({ isActive }) => `${isActive ? styles.active : ''} ${styles.link}`}> 
-                reach out 
-                </NavLink> for collaboration!
+                get in touch 
+                </NavLink> with me!
           </p>
-          <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
+          <br />
+          <br />
+          <br />
+          <a style={{color:"hsl(192, 100%, 50%)"}} href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
           
         </div>
        
