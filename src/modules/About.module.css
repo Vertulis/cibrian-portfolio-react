@@ -1,0 +1,45 @@
+.aboutContainer{
+    padding: 10px;
+}
+
+hr{
+    color: hsl(192, 100%, 50%);
+}
+
+.mainHeading{
+    color: hsl(192, 100%, 50%);
+    font-size: 2em;
+    font-weight: 100;
+}
+.bodyText{
+    color: hsl(0, 0%, 90%);
+}
+.languageImagesContainer{
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+}
+.languageImage{
+    width: 50px;
+}
+.credleyBadgesContainer {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.link{
+    text-decoration: none;
+    color: hsl(192, 100%, 50%) ;
+    border: none;
+}
+
+
+.link:hover{
+    color: hsl(0, 0%, 100%);
+}
