@@ -21,7 +21,7 @@ function Home() {
                     <div className={styles.linksContainer}>
                         <i className={`fa-brands fa-linkedin ${styles.contactIcons}`} onClick={() => window.location.href = "https://www.linkedin.com/in/cibrian-hofsta-b95508279"}></i>
                         <i className={`fa-brands fa-github ${styles.contactIcons}`} onClick={() => window.location.href = "https://github.com/Vertulis"}></i>
-                        <a className={styles.downloadCVLink} href="../images/CibrianCV.pdf" download>
+                        <a className={styles.downloadCVLink} href="../src/images/CibrianCV.pdf" download>
                             <button className={styles.downloadCVBtn}>Download CV</button>
                         </a>
                     </div>
