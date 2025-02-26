@@ -1,0 +1,50 @@
+.projectsContainer{
+    padding: 10px;
+}
+
+hr{
+    color: hsl(192, 100%, 50%);
+}
+
+.subHeading{
+    color: hsl(0, 0%, 90%);
+    text-align: center;
+    font-weight: 400;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.linkContainer{
+    text-decoration: none;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    border: 1px solid hsl(192, 100%, 50%);
+    color: hsl(0, 0%, 90%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.projectHeading{
+    color: hsl(192, 100%, 50%);
+    font-weight: 400;
+    margin: 0;
+    padding: 10px;
+}
+
+.projectImg{
+    width: 170px;
+}
+
+.projectDesc{
+    text-wrap: wrap;
+}
