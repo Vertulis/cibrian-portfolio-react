@@ -44,7 +44,7 @@ hr{
     height: 130px;
     background-color: hsl(0, 0%, 20%);
     color: hsl(0, 0%, 90%);
-    border: 1px solid hsl(0, 0%, 90%);
+    border: 1px solid hsl(192, 100%, 50%);
     padding: 10px;
     border-radius: 10px;
     transition: 0.1s ;
@@ -55,6 +55,7 @@ hr{
 .credleyBadge h3{
     padding: 2px;
     margin: 0;
+    color: hsl(192, 100%, 50%);
     font-weight: 500;
 }
 .credleyBadge h3{
